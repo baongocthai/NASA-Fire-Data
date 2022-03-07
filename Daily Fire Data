@@ -1,6 +1,9 @@
 library(readr)
 library(stringr)
 
+#set working directory
+setwd("D:/Backtrajectory/Backtrajectory")
+
 #import data: change the file name below
 fire_nov <- read_csv("Fire data/DL_FIRE_M-C61_241306/fire_nrt_M-C61_241306.csv")
 fire = data.frame(matrix(ncol = 3,nrow = nrow(fire_nov)))
